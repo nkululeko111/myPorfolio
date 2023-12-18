@@ -1,0 +1,250 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212529;
+    color: #ffffff;
+}
+
+header, section, footer {
+    margin: 20px;
+    background-color: #343a40;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    color: black;
+    background-color: transparent;
+    border-radius: 35%;
+}
+
+button:hover {
+    background-color: rgb(219, 153, 10);
+    width: 50%;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Add border color to the header */
+header {
+    text-align: center;
+    border: 10px solid rgb(219, 153, 10); /* Add this line to set the border color and width */
+}
+
+/* Override text-align for other elements */
+header h2, header h3 {
+    text-align: left;
+}
+
+#portfolio:hover {
+    background-color: rgb(219, 153, 10);
+}
+
+#contact:hover {
+    background-color: rgb(219, 153, 10);
+}
+
+/* Add styles for the bio container */
+.bio-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the bio text */
+.bio-text {
+    flex: 1;
+}
+
+/* Style for the bio image */
+.bio-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+h2, h3 {
+    color: #ffffff;
+    text-align: left;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 5px;
+    text-align: center;
+    color: #979ea5;
+    border-radius: 30px ;
+   
+}
+
+.project {
+    border: 1px solid #495057;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #495057;
+}
+
+.project h3 {
+    color: #007BFF;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, section, footer {
+        margin: 10px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+}
+
+
+
+/* Add styles for the social icons container */
+/* .social-icons {
+    display: flex;
+    flex-direction: horizontal; Align icons vertically */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+
+#about:hover {
+    opacity: 50%;
+}
+
+  .social-icons p {
+    margin: 0 10px;
+  }
+  
+.film-heading {
+    color: transparent;
+    background-color: transparent;
+}
+/* Style social media icons */
+.fa {
+    padding: 10px;
+    font-size: 40px; /* Adjust the font size as needed */
+    text-align: center;
+    position: center;
+    text-decoration: none;
+    margin-right: 10px; /* Add some spacing between icons */
+}
+
+/* Add hover effect */
+.fa:hover {
+    background-color: rgb(219, 153, 10);
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+/* Add flex container styles for the flip cards */
+#portfolio.flex-container {
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+}
+
+
+
+/* Add responsive design for flip cards */
+@media (max-width: 768px) {
+    .flip-card {
+        width: 100%; /* Make flip cards occupy full width on smaller screens */
+        margin: 10px 0; /* Add some vertical spacing between flip cards */
+    }
+}
+
+/* Add flex container styles */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Adjust this property based on your spacing preference */
+}
+
+/* Add flip card styles */
+.flip-card {
+    width: 200px; /* Set the width of the flip card */
+    height: 300px; /* Set the height of the flip card */
+    perspective: 1000px;
+    margin: 10px; /* Adjust margin as needed */
+    flex: 1;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.flip-card-front {
+    background-color: #495057;
+    color: #fff;
+    border: 1px solid #343a40;
+    border-radius: 8px;
+}
+
+.flip-card-back {
+    background-color: #343a40;
+    color: #fff;
+    border: 1px solid #495057;
+    border-radius: 8px;
+    transform: rotateY(180deg);
+}
+
+
