@@ -95,7 +95,8 @@ footer {
     text-align: center;
     color: #979ea5;
     border-radius: 30px ;
-   
+    border: 5px rgb(219, 153, 10);
+   padding: 10px;
 }
 
 .project {
