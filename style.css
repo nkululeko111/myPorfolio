@@ -91,11 +91,11 @@ a:hover {
 }
 
 footer {
-    margin-top: 5px;
+    margin-top: 2px;
     text-align: center;
     color: #979ea5;
     border-radius: 30px ;
-    border: 5px rgb(219, 153, 10);
+    border: 5px solid rgb(219, 153, 10);
    padding: 10px;
 }
 
@@ -106,6 +106,15 @@ footer {
     margin-bottom: 20px;
     background-color: #495057;
 }
+
+
+.project .flip-card-front img {    
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}
+
 
 .project h3 {
     color: #007BFF;
